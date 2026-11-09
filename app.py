@@ -5,8 +5,8 @@ import joblib
 from train_model import train_and_save, MODEL_FILE, DATA_FILE
 
 st.set_page_config(
-    page_title="Student Performance Prediction",
-    page_icon="🎓",
+    page_title="Wine Quality Prediction System",
+    page_icon="🍷",
     layout="wide"
 )
 
@@ -23,7 +23,7 @@ def load_dataset():
         train_and_save()
     return pd.read_csv(DATA_FILE)
 
-st.title("🎓 Student Performance Prediction System")
+st.title("🍷 Wine Quality Prediction System")
 st.caption("Classroom prototype for exploring possible academic risk. Predictions are not diagnoses.")
 
 try:
